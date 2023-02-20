@@ -1,0 +1,247 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Karla', sans-serif;
+  font-size: x-large;
+  background-image: url('https://thumbs.gfycat.com/AbandonedNecessaryCapeghostfrog-size_restricted.gif');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.col-Left {
+  float: left;
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  background-color: rgba(21, 24, 30, 90%);
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+}
+
+ul.nav-pills {
+  position: fixed;
+  width: 24%;
+}
+
+a,
+a:hover {
+  color: white;
+}
+
+.col-Right {
+  float: right;
+  width: 75%;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+  top: 45%;
+  color: white;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Play', sans-serif;
+  margin-top: -10px;
+}
+
+.col-Left li {
+  padding: 30px;
+  background-color: #15181e;
+  font-size: x-large;
+}
+
+.col-Right section {
+  padding: 100px;
+}
+
+#section1 {
+  color: #fff;
+  background-color: rgba(32, 35, 39, 75%);
+  padding: 0;
+}
+#section2 {
+  color: #fff;
+  background-color: rgba(46, 49, 56, 75%);
+}
+#section3 {
+  color: #fff;
+  background-color: rgba(32, 35, 39, 75%);
+}
+#section4 {
+  color: #fff;
+  background-color: rgba(46, 49, 56, 75%);
+}
+#section5 {
+  color: #fff;
+  background-color: rgba(32, 35, 39, 75%);
+}
+#section6 {
+  color: #fff;
+  background-color: rgba(46, 49, 56, 75%);
+}
+
+.zoom {
+  transition: transform 0.4s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+img.thumbnail {
+  height: 100px;
+}
+
+/* HR animation */
+hr {
+  width: 50%;
+  margin: 0;
+  animation: expand infinite;
+}
+
+#hr0 {
+  animation-duration: 4.2s;
+}
+#hr1 {
+  animation-duration: 5s;
+}
+#hr2 {
+  animation-duration: 4s;
+}
+#hr3 {
+  animation-duration: 6s;
+}
+#hr4 {
+  animation-duration: 5.5s;
+}
+
+@keyframes expand {
+  from {
+    width: 10%;
+  }
+  50% {
+    width: 75%;
+  }
+  to {
+    width: 10%;
+  }
+}
+
+/* Image Slideshow */
+
+.tech-slideshow {
+  height: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  font-size: 0;
+}
+
+.mover-1 {
+  height: 500px;
+  width: max-content;
+
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+
+  animation: moveSlideshow 5s linear infinite;
+}
+
+.mover-1 img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 500px;
+  height: 500px;
+  margin: 0;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+
+/* Icons */
+.fa {
+  width: 100%;
+}
+
+#section6 .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 75px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+#section6 .fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-github {
+  background: white;
+  color: #171515;
+}
